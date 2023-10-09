@@ -5,13 +5,12 @@ public class Négyzet {
     
     private int a;
     private Koordinata koordinata;
-
+    private String allapot;
     public Négyzet( int a, Koordinata koordinata) {
         this.a = a;
         this.koordinata = koordinata;
     }
-    
-    
+
     public void setA(int a) {
         
         if (a <=0 ){
@@ -24,7 +23,7 @@ public class Négyzet {
         return a;
     }
 
-
+   
     public Koordinata getKoordinata() {
         return koordinata;
     }
@@ -33,7 +32,7 @@ public class Négyzet {
         this.koordinata = koordinata;
     }
 
-    public String allapot() {
+    public String toString() {
         return "N\u00e9gyzet{" + "terulet=" + a*a + ", a=" + a + ", x koordinata=" + koordinata.getX() + ", y koordinata=" + koordinata.getY() + '}';
     }
 }
