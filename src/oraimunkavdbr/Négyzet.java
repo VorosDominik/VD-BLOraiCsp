@@ -23,6 +23,7 @@ public class Négyzet {
     public int getA() {
         return a;
     }
+ 
 
 
     public Koordinata getKoordinata() {
@@ -33,7 +34,14 @@ public class Négyzet {
         this.koordinata = koordinata;
     }
 
-    public String allapot() {
+    public String toString() {
         return "N\u00e9gyzet{" + "terulet=" + a*a + ", a=" + a + ", x koordinata=" + koordinata.getX() + ", y koordinata=" + koordinata.getY() + '}';
+    }
+    public boolean egyforma(Négyzet B){
+        if (a==B.getA()) {
+            return true;
+        }
+      
+           return false;
     }
 }
