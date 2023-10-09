@@ -22,6 +22,7 @@ public class Négyzet {
     public int getA() {
         return a;
     }
+ 
 
    
     public Koordinata getKoordinata() {
@@ -31,23 +32,23 @@ public class Négyzet {
     public void setKoordinata(Koordinata koordinata) {
         this.koordinata = koordinata;
     }
-//    private boolean osszehasonlit(Négyzet b) {
-//        if (this.a == b.getA()) {
-//            return true;
-//        } else if (this.a < b.getA()) {
-//            return false;
-//        } else {
-//            return false;
-//        }
-//    }
-//    public void osszehasonlitszoveg(Négyzet b) {
-//        boolean eredmeny = osszehasonlit(b);
-//        if (eredmeny) {
-//            System.out.println("A négyzetek egyformák.");
-//        } else {
-//            System.out.println("A négyzetek nem egyformák.");
-//        }
-//    }
+////    private boolean osszehasonlit(Négyzet b) {
+////        if (this.a == b.getA()) {
+////            return true;
+////        } else if (this.a < b.getA()) {
+////            return false;
+////        } else {
+////            return false;
+////        }
+////    }
+////    public void osszehasonlitszoveg(Négyzet b) {
+////        boolean eredmeny = osszehasonlit(b);
+////        if (eredmeny) {
+////            System.out.println("A négyzetek egyformák.");
+////        } else {
+////            System.out.println("A négyzetek nem egyformák.");
+////        }
+////    }
     @Override
     public boolean equals(Object obj){
         Négyzet masik = (Négyzet) obj;
@@ -57,5 +58,11 @@ public class Négyzet {
     public String toString() {
         return "N\u00e9gyzet{" + "terulet=" + a*a + ", a=" + a + ", x koordinata=" + koordinata.getX() + ", y koordinata=" + koordinata.getY() + '}';
     }
+    public boolean egyforma(Négyzet B){
+        if (a==B.getA()) {
+            return true;
+        }
+      
+           return false;
+    }
 }
-
