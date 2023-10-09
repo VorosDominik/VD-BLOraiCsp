@@ -1,20 +1,19 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
+
+
 package oraimunkavdbr;
 
-/**
- *
- * @author bella.richard
- */
 public class Program {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-    
+        Koordinata nk= new Koordinata();
+        
+        Négyzet n= new Négyzet();
+        nk.setXkoordinata(5);
+        nk.setYkoordinata(5);
+         n.setOldal(1);
+        n.setTerulet();
+       
+        System.out.println(n + "a kordinatak x: "+nk.getXkoordinata()+", y: "+nk.getYkoordinata()+ '}' );
     }
     
 }
