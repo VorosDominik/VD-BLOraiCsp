@@ -1,28 +1,36 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package oraimunkavdbr;
 
-/**
- *
- * @author voros.dominik
- */
-class Koordinata {
-     private int xkoordinata;
-    private int ykoordinata;
-     public void setXkoordinata(int xkoordinata) {
-        this.xkoordinata = xkoordinata;
+
+
+public class Koordinata {
+    private int x;
+    private int y;
+
+    public Koordinata(int x, int y) {
+        this.x = x;
+        this.y = y;
     }
 
-    public void setYkoordinata(int ykoordinata) {
-        this.ykoordinata = ykoordinata;
-    }
-      public int getXkoordinata() {
-        return xkoordinata;
+ 
+    public int getX() {
+        return x;
     }
 
-    public int getYkoordinata() {
-        return ykoordinata;
+    public void setX(int x) {
+        this.x = x;
+    }
+
+    public int getY() {
+        return y;
+    }
+
+    public void setY(int y) {
+        this.y = y;
+    }
+
+    @Override
+    public String toString() {
+        return "Koordinata{" + "x=" + x + ", y=" + y + '}';
     }
 }
