@@ -3,9 +3,15 @@ package oraimunkavdbr;
 
 public class Négyzet {
     
-    private int terulet;
     private int a;
-    private String allapot = "";
+    private Koordinata koordinata;
+
+    public Négyzet( int a, Koordinata koordinata) {
+        this.a = a;
+        this.koordinata = koordinata;
+    }
+    
+    
     public void setA(int a) {
         
         if (a <=0 ){
@@ -13,24 +19,22 @@ public class Négyzet {
         }
         this.a = a;
     }
-    
-    public void setTerulet(int terulet) {
-        
-        this.terulet = a*a;
-    }
+ 
     public int getA() {
         return a;
     }
 
-    public int getTerulet() {
-        return terulet;
+
+    public Koordinata getKoordinata() {
+        return koordinata;
     }
 
-    @Override
-    public String toString() {
-        return "N\u00e9gyzet{" + "terulet=" + terulet + ", a=" + a + ", allapot=" + allapot + '}';
+    public void setKoordinata(Koordinata koordinata) {
+        this.koordinata = koordinata;
     }
 
-
+    public String allapot() {
+        return "N\u00e9gyzet{" + "terulet=" + a*a + ", a=" + a + ", x koordinata=" + koordinata.getX() + ", y koordinata=" + koordinata.getY() + '}';
+    }
 }
 
